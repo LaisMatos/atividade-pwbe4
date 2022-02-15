@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body{
+    background:cornsilk;
+}
+a{
+    color: black;
+    font-family: 'Roboto Slab', serif;
+}
+a:hover{
+    background: rgba(0, 0, 0, .05);
+}
+label.logo{
+    font-family: 'Roboto Slab', serif;
+    font-size: 2rem;
+    font-weight: bold;
+    
+}
+#header{
+    /*box-sizing: border-box;*/   /*ajuda a calcular altura e largura*/
+    display: flex;
+    align-items: center;
+    height: 100%; /**/
+    padding: 3rem;
+    justify-content: space-between;
+    background-color: #99a8bed7;
+}
+#divMenu{
+    display: block;
+    
+}
+#navUl{
+    gap: .5rem;
+    height: 150px; 
+    display: none;
+    margin-left: -5px;  
+    position: absolute;
+}
+
+#navUl a{
+    display: block;      /*aumenta a area de contato*/
+    padding: .5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Roboto Slab', serif; 
+}
+
+#menuBurguer{
+    margin-left: -150px;
+    margin-top: 7px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: left;
+}
+
+#menuBurguer a{
+    display: block;
+    text-decoration: none;
+}
+
+#imgMenu:hover >#navUl {
+ display: block;
+}
